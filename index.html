@@ -3,20 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <link href="node_modules/codemirror/lib/codemirror.css" rel="stylesheet"/>
+        <link href="node_modules/codemirror/theme/darcula.css" rel="stylesheet"/>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
         <script src="node_modules/codemirror/lib/codemirror.js"></script>
         <script src="node_modules/codemirror/mode/sql/sql.js"></script>
-        <script src="node_modules/codemirror/addon/hint/sql-hint.js"></script> 
+        <script src="node_modules/codemirror/addon/hint/sql-hint.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
         <title></title>
     </head>
     <body>
         <div><b>REQUETE SQL : </b></div>
-        <textarea id="editor"></textarea>
-        <script>
-            var editor=CodeMirror.fromTextArea
-            (document.getElementById("editor"),{
-                mode:"sql",
-                lineNumbers:true
-            });
-        </script>
+        <textarea id="editor">SELECT * FROM table_content;</textarea><br/>
+        <button type="button" class="btn btn-success">Envoyer Requete</button>
+        <button type="button" class="btn btn-danger">Effacer l'editeur</button>
+        <script src="editor.js"></script> 
     </body>
 </html>
