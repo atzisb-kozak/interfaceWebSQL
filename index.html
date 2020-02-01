@@ -2,23 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <!--<link href="style.css" rel="stylesheet">-->
-        <link href="node_modules/codemirror/lib/codemirror.css" rel="stylesheet">
+        <link href="node_modules/codemirror/lib/codemirror.css" rel="stylesheet"/>
         <script src="node_modules/codemirror/lib/codemirror.js"></script>
         <script src="node_modules/codemirror/mode/sql/sql.js"></script>
-        <script src="node_modules/codemirror/addon/hint/sql-hint.js"></script>
+        <script src="node_modules/codemirror/addon/hint/sql-hint.js"></script> 
         <title></title>
     </head>
     <body>
-        <div>Requete SQL : </div>
-        <textarea id="editor">SELECT * FROM </textarea>
+        <div><b>REQUETE SQL : </b></div>
+        <textarea id="editor"></textarea>
         <script>
             var editor=CodeMirror.fromTextArea
-            (document.getElementById('editor'),{
+            (document.getElementById("editor"),{
                 mode:"sql",
-                lineNumbers=true
+                lineNumbers:true
             });
-            editor.setSize("3000","3000")
         </script>
     </body>
 </html>
