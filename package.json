@@ -1,0 +1,22 @@
+{
+  "name": "interfacewebsql",
+  "version": "1.0.0",
+  "description": "interface Web pour SQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atzisb-kozak/interfaceWebSQL.git"
+  },
+  "author": "atzisb-kozak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atzisb-kozak/interfaceWebSQL/issues"
+  },
+  "homepage": "https://github.com/atzisb-kozak/interfaceWebSQL#readme",
+  "dependencies": {
+    "codemirror": "^5.51.0"
+  }
+}
