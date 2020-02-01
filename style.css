@@ -1,0 +1,8 @@
+#envoiereq {
+    display: inline;
+    margin-left: 500px;
+    border: 1px solid green;
+}
+#deletedata {
+    border : 1px solid red
+}
